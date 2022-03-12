@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int somaDivisores(int a){
+  int divi = 0;
+  
+  for(int d = 1; d <= a; d++){ 
+    if(a % d == 0){  
+      divi = divi + d; 
+    }
+  }
+  return divi;
+}
+
+int main(){
+  int num, resultado;
+  printf("PROGRAMA PARA SOMATORIO DE DIVISORES\n");
+  
+  printf("Digite um valor: ");
+  scanf("%d", &num);
+  
+  resultado = somaDivisores(num);
+  
+  printf("Soma = %d", resultado);
+    
+  
+}
