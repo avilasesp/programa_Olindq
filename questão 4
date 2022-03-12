@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int raio_esfera(int raio){
+  int v;
+  v = 4 / 3 * (raio * raio * raio);
+  
+  return v;
+   
+}
+int main() {
+  int n , r , v , resultado ;
+  
+  printf("Informe o raio da esfera :");
+  scanf("%d",&n);
+  
+  resultado = raio_esfera(n);
+  
+  printf("O volume da esfera é :%d",resultado);
+  
+  return 0;
+ 
+}
