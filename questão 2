@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+float segundos (float horas, float minutos, float segun) {
+  float cauculo;
+  cauculo = (segun + minutos * 60) + (horas * 60 * 60);
+  
+  return cauculo;
+ 
+  }
+  
+
+int main(){
+    setlocale(LC_ALL,"Portuguese_Brazil");
+    float horas, minutos, segun;
+    
+    printf("informe o número de horas,de minutos e de segundos: ");
+    scanf("%f%f%f",&horas, &minutos, &segun);
+    
+ printf("\n\n o numero total de segundos são : %f",segundos(horas, minutos, segun));
+ 
+}
